@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="{{ url_for('static', path='/imgs/favicon.ico') }}">
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', path='/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', path='/css/jumbotron.css')}}" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Hello, {{ username }}</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur dolorem dolorum eaque enim error est illum, in modi mollitia nesciunt perspiciatis quibusdam rem repellendus repudiandae sequi temporibus, ullam, vel.</p>
+            <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at beatae culpa cum dolor dolores, dolorum ducimus eius in laborum magni necessitatibus odit placeat porro, provident quasi rerum, sed? Distinctio.</p>
+                <p><a href="#" role="button" class="btn btn-default">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque blanditiis culpa cupiditate dolorum ipsa mollitia nesciunt odio quos sed? Assumenda exercitationem iste molestias quae quam soluta tempore veritatis. Laboriosam!</p>
+                <p><a href="#" role="button" class="btn btn-default">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo in natus quisquam soluta. Accusantium, blanditiis commodi consequatur debitis deleniti, dolor error natus nobis, praesentium quam quos repellendus reprehenderit sunt.</p>
+                <p><a href="#" role="button" class="btn btn-default">View details &raquo;</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2020 Company, Inc.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', path='/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
